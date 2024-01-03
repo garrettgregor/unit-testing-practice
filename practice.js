@@ -9,11 +9,26 @@ function startGPS(currentLocation, newLocation) {
   } else {
     return `You are already at the ${newLocation}!  Would you like to go somewhere else?`
   }
+};
+
+function createUser(firstName, lastName, birthDate) {
+  const user = { onlineStatus: false }; // can use const, var or let within brackets
+
+  if (firstName && lastName) {
+    user.firstName = firstName;
+    user.lastName = lastName
+  };
+
+  if (birthDate) {
+    user.birthDate = birthDate
+  }
+
+  return user
 }
 
 module.exports = {
   findRemainder,
   startGPS,
-  // createUser,
+  createUser,
   // makePizza
 }
