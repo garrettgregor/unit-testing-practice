@@ -50,14 +50,14 @@ describe('practice', function () {
   });
 
   describe('createUser', function () {
-    it.skip('should return a user object with a first name and last name', function() {
+    it('should return a user object with a first name and last name', function() {
       var user = createUser('Jeremiah', 'Black')
 
       assert.equal(user.firstName, 'Jeremiah');
       assert.equal(user.lastName, 'Black');
     })
 
-    it.skip('should return a user object with their name and birthdate', function () {
+    it('should return a user object with their name and birthdate', function () {
       var user = createUser('Kayla', 'Gordon', 'May 15th');
 
       assert.equal(user.firstName, 'Kayla');
@@ -65,7 +65,7 @@ describe('practice', function () {
       assert.equal(user.birthDate, 'May 15th')
     });
 
-    it.skip('should default with the user being signed off', function () {
+    it('should default with the user being signed off', function () {
       var user = createUser('Travis', 'Rollins', 'June 8th');
 
       assert.deepEqual(user, {
