@@ -27,21 +27,21 @@ describe('practice', function () {
 
   describe('startGPS', function () {
 
-    it.skip('should be able to take you to a new location', function () {
+    it('should be able to take you to a new location', function () {
       var currentLocation = 'home';
       var newLocation = 'Starbucks';
 
       assert.equal(startGPS(currentLocation, newLocation), 'Taking you from home to Starbucks!  Getting directions now!')
     });
 
-    it.skip('should be able to take you to a different location', function () {
+    it('should be able to take you to a different location', function () {
       var currentLocation = 'Turing';
       var newLocation = 'Taco Bell';
 
       assert.equal(startGPS(currentLocation, newLocation), 'Taking you from Turing to Taco Bell!  Getting directions now!')
     });
 
-    it.skip('should tell you if you are already at that location', function () {
+    it('should tell you if you are already at that location', function () {
       var currentLocation = 'Denver International Airport';
       var newLocation = 'Denver International Airport';
 
