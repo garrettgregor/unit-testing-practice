@@ -21,14 +21,24 @@ function createUser(firstName, lastName, birthDate) {
 
   if (birthDate) {
     user.birthDate = birthDate
-  }
+  };
 
   return user
-}
+};
+
+function makePizza(pizza, ingredient) {
+  pizza.cooked = true;
+
+  if (pizza.toppings.length < 5) {
+    pizza.toppings.push(ingredient);
+  };
+
+  return pizza
+};
 
 module.exports = {
   findRemainder,
   startGPS,
   createUser,
-  // makePizza
+  makePizza
 }
